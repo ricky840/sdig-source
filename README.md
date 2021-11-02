@@ -30,6 +30,16 @@ $ sdig www.akamai.com
 e1699.dscc.akamaiedge-staging.net.
 23.62.71.31
 ```
+Use a specific nameserver to resolve the domain
+```
+[ricky@workbox ~ ]$ sdig www.akamai.com -n 1.1.1.1
+e1699.dscx.akamaiedge-staging.net.
+104.81.198.238
+
+[ricky@workbox ~ ]$ sdig www.akamai.com -n 8.8.8.8
+e1699.dscx.akamaiedge-staging.net.
+23.51.1.37
+```
 
 Add Spoofing staging IP address for www.akamai.com
 ```
